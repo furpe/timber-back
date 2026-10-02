@@ -6,7 +6,7 @@
 // 1. Configuração e Estado Global da Aplicação
 const DEFAULT_API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || !window.location.hostname
   ? 'http://localhost:3000/api'
-  : '/api';
+  : 'https://timber-back.vercel.app/api';
 
 const state = {
   apiBase: localStorage.getItem('cinetimber_api_url') || DEFAULT_API_BASE,
